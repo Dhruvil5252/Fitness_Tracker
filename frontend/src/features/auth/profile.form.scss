@@ -1,0 +1,146 @@
+.profile-container {
+    padding: 1.75rem;
+    background-color: #161B22;
+    border-radius: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .profile-heading {
+        text-align: center;
+    }
+
+    .user-metric {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
+        input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: whitesmoke;
+            width: 50%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input::placeholder {
+            color: #7A7D88;
+            font-size: 2.85rem;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .age,
+        .weight,
+        .height,
+        .gender {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            width: 150px;
+            height: 150px;
+            background-color: #171B27;
+            padding: 1.75rem;
+            border: 2px solid rgba(128, 128, 128, 0.064);
+            border-radius: 10px;
+        }
+
+        .gender {
+            select {
+                background-color: transparent;
+                border: none;
+                outline: none;
+
+                option {
+                    background-color: #161B22;
+                }
+            }
+
+        }
+    }
+
+    .activity-level {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .levels {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+
+            .activity-btn {
+                width: 20%;
+                height: 2rem;
+                background-color: #171B27;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                border: 2px solid rgba(128, 128, 128, 0.064);
+                cursor: pointer;
+            }
+            
+            .activity-btn:hover {
+                box-shadow: 0 0 20px #adc6ff2b;
+            }
+        }
+    }
+
+    .primary-objective {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .goal {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+
+            .goal-btn {
+                background-color: #171B27;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 10px;
+                border: 2px solid rgba(128, 128, 128, 0.064);
+                padding-block: 1rem;
+                padding-inline: 20px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: flex-start;
+                gap: 5px;
+
+                h4{
+                    font-size: 1rem;
+                }
+
+                p{
+                    font-size: 0.90rem;
+                }
+            }
+
+            .goal-btn:hover {
+                box-shadow: 0 0 20px #adc6ff2b;
+            }
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: #385283;
+    }
+}

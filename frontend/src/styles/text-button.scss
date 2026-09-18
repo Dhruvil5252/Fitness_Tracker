@@ -1,0 +1,36 @@
+.heading-text {
+    color: #DEE2F2;
+}
+
+.sub-text {
+    color: #C4C6D0;
+}
+
+.button {
+    padding-block: 0.65rem;
+    border-radius: 6px;
+    border: none;
+    margin-block: 8px;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+
+    &.primary-button {
+        background-color: #ADC6FF;
+        color: #385283;
+        font-size: 13px;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    &:active {
+        transform: scale(0.9)
+    }
+}
+
+
+.link-text {
+    color: #D8E2FF;
+    text-decoration: none;
+    font-weight: bold;
+}
