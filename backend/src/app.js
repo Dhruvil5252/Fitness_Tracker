@@ -14,10 +14,16 @@ app.use(cors({
  * - Routes required
  */
 const authRouter = require("./routes/auth.routes")
+const workoutRouter = require("./routes/workout.routes")
 
 /**
  * - Use Routes
  */
 app.use("/api/auth", authRouter)
+
+/**
+ * - Workout Routes
+ */
+app.use("/api/workout", workoutRouter)
 
 module.exports = app
