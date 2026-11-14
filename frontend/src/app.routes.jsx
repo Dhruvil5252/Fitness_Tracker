@@ -3,6 +3,7 @@ import Login from "./features/auth/pages/Login.jsx";
 import Register from "./features/auth/pages/Register.jsx";
 import Profile from "./features/auth/pages/Profile.jsx";
 import Home from "./features/workout/pages/Home.jsx";
+import WorkoutPlan from "./features/workout/pages/WorkoutPlan.jsx";
 import Protected from "./features/auth/components/Protected.jsx";
 
 export const router = createBrowserRouter([
@@ -17,6 +18,14 @@ export const router = createBrowserRouter([
   {
     path: "/profile",
     element: <Profile />,
+  },
+  {
+    path: "/workout",
+    element: (
+      <Protected>
+        <WorkoutPlan />
+      </Protected>
+    ),
   },
   {
     path: "/",
